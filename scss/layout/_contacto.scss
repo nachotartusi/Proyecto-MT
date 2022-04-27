@@ -1,0 +1,57 @@
+// media querie mobile
+.contactoGrid {
+    display: grid;
+    grid-template-areas: "formulario"
+                         "ubicacion";
+    grid-row-gap: 80px;
+    justify-content: center;
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    .formulario1 {
+        padding: 3rem;
+        grid-area: formulario;
+        text-align: left;
+    }
+    .ubicacion {
+    grid-area: ubicacion;
+    text-align: center;
+    padding-top: 2rem;
+    }
+    iframe {
+    width: 80%;
+    }
+
+}
+
+// media para desktop
+
+@media only screen and (min-width:1024px) {
+
+    .divContacto {
+        display: grid;
+        grid-template-areas: 
+        "formulario formulario ubicacion ubicacion";
+        justify-content: space-around;
+        display: flex;
+        flex-flow: row;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .formulario1 {
+        grid-area: formulario;
+        text-align: left;
+        width: 50%;
+    
+    }
+
+    .ubicacion {
+        grid-area: ubicacion;
+        text-align: center;
+        }
+
+
+
+
+
+
+}

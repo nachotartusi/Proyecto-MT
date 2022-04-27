@@ -1,0 +1,363 @@
+nav {
+  background-color: #ade8f4;
+  font-size: 20px; }
+
+.contactoGrid {
+  display: grid;
+  grid-template-areas: "formulario" "ubicacion";
+  grid-row-gap: 80px;
+  justify-content: center;
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  .contactoGrid .formulario1 {
+    padding: 3rem;
+    grid-area: formulario;
+    text-align: left; }
+  .contactoGrid .ubicacion {
+    grid-area: ubicacion;
+    text-align: center;
+    padding-top: 2rem; }
+  .contactoGrid iframe {
+    width: 80%; }
+
+@media only screen and (min-width: 1024px) {
+  .divContacto {
+    display: grid;
+    grid-template-areas: "formulario formulario ubicacion ubicacion";
+    justify-content: space-around;
+    display: flex;
+    flex-flow: row;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  .formulario1 {
+    grid-area: formulario;
+    text-align: left;
+    width: 50%; }
+  .ubicacion {
+    grid-area: ubicacion;
+    text-align: center; } }
+
+.divIndex {
+  background-color: #d5f3f9;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  .divIndex .titulo {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 30px;
+    font-weight: 1900;
+    letter-spacing: 6px;
+    background-color: #d5f3f9;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  .divIndex .subtituloQuiro {
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 10px;
+    padding-bottom: 4rem; }
+  .divIndex .parrafoConsulta {
+    text-align: center;
+    text-decoration: none; }
+    .divIndex .parrafoConsulta :hover {
+      background-color: #4fa5b6;
+      transform: scale(10px);
+      color: #d5f3f9; }
+
+.sectionNosotros {
+  background-color: #d5f3f9;
+  padding-bottom: 3rem; }
+  .sectionNosotros .divNosotros {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    flex-direction: column-reverse; }
+  .sectionNosotros .divHijo {
+    justify-self: center; }
+  .sectionNosotros .subtituloNosotros {
+    text-align: center;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  .sectionNosotros .parrafoQuiro {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: darkslategray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: justify;
+    font-style: italic;
+    padding: 1rem; }
+  .sectionNosotros .leerMas {
+    text-align: center;
+    padding-top: 20px; }
+  .sectionNosotros .divHijo2 {
+    padding-top: 80px;
+    text-align: center; }
+    .sectionNosotros .divHijo2 img {
+      width: 70%;
+      height: 70%; }
+
+#ventajas {
+  background-color: #d5f3f9;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  #ventajas .ventajasTitulo {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    opacity: 0.7; }
+  #ventajas .divVentajas {
+    text-align: center; }
+  #ventajas .li1, #ventajas .li2, #ventajas .li3, #ventajas .li4 {
+    justify-self: center;
+    padding: 30px 8px 6px 8px;
+    list-style: none; }
+
+.salasIndex {
+  text-align: center;
+  padding: 5rem; }
+  .salasIndex .imagenSalas {
+    text-align: center; }
+    .salasIndex .imagenSalas img {
+      width: 80%;
+      height: 80%;
+      border-radius: 200px 200px 200px 200px;
+      -moz-border-radius: 200px 200px 200px 200px;
+      -webkit-border-radius: 200px 200px 200px 200px;
+      border: solid #00b4d8; }
+
+.nosotrosGrid {
+  display: grid;
+  grid-template-areas: "nosotros " "video " "objetivo ";
+  background-color: #d5f3f9;
+  justify-content: left; }
+  .nosotrosGrid .divNosotros2 {
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    padding-bottom: 150px; }
+  .nosotrosGrid .divHijoNosotros {
+    grid-area: nosotros;
+    padding: 30px 50px 6px 50px;
+    text-align: center; }
+    .nosotrosGrid .divHijoNosotros .h2Nosotros {
+      text-align: center;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      padding-bottom: 50px;
+      padding-top: 40px;
+      font-size: 30px;
+      letter-spacing: 3px; }
+    .nosotrosGrid .divHijoNosotros .parrafoQuiro2 {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: darkslategray;
+      font-family: 'Roboto', sans-serif;
+      letter-spacing: 2px;
+      text-align: justify;
+      font-style: italic;
+      padding: 1rem; }
+  .nosotrosGrid .divImgNosotros {
+    grid-area: video;
+    text-align: center; }
+    .nosotrosGrid .divImgNosotros .animate__animated {
+      width: 70%;
+      height: 70%; }
+  .nosotrosGrid .objetivos {
+    grid-area: objetivo;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    .nosotrosGrid .objetivos .ulObjetivo {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      list-style: none;
+      text-align: center; }
+    .nosotrosGrid .objetivos h4 {
+      padding-bottom: 10px;
+      text-transform: none;
+      font-size: 2rem;
+      text-align: center; }
+    .nosotrosGrid .objetivos li {
+      text-align: center;
+      padding: 25px;
+      text-align: justify; }
+    .nosotrosGrid .objetivos .mision, .nosotrosGrid .objetivos .vision, .nosotrosGrid .objetivos .objetivo {
+      justify-self: center;
+      margin: 100px;
+      padding: 5px;
+      border-radius: 10px 10px 10px 10px;
+      -moz-border-radius: 10px 10px 10px 10px;
+      -webkit-border-radius: 10px 10px 10px 10px;
+      border: 2px solid #00b4d8; }
+
+@media only screen and (min-width: 1024px) {
+  .nosotrosGrid {
+    display: grid;
+    grid-template-areas: "nosotros nosotros " "video video " "objetivo objetivo";
+    background-color: #d5f3f9;
+    justify-content: left; }
+    .nosotrosGrid .divHijoNosotros {
+      grid-area: nosotros; }
+      .nosotrosGrid .divHijoNosotros h2 {
+        font-size: 3rem;
+        padding-top: 2rem; }
+      .nosotrosGrid .divHijoNosotros .parrafoQuiro2 {
+        font-size: 1.3rem;
+        padding: 4rem 10rem 4rem 10rem; }
+    .nosotrosGrid .divImgNosotros {
+      grid-area: video;
+      width: 50%;
+      justify-self: center; }
+    .nosotrosGrid .objetivo {
+      grid-area: objetivo; }
+      .nosotrosGrid .objetivo .mision, .nosotrosGrid .objetivo .vision, .nosotrosGrid .objetivo .objetivo {
+        justify-self: center;
+        padding: 5rem; } }
+
+/* TESTIMONIOS media querie mobile */
+.mainTestimonios {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: grid;
+  grid-template-areas: "titulo" "logo1" "testimonio1" "logo2" "testimonio2" "logo3" "testimonio3"; }
+
+h1 {
+  grid-area: titulo;
+  justify-self: center;
+  font-size: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem; }
+
+.img1 {
+  grid-area: logo1;
+  justify-self: center;
+  margin-top: 30px;
+  border-radius: 88px 88px 88px 88px;
+  -moz-border-radius: 88px 88px 88px 88px;
+  -webkit-border-radius: 88px 88px 88px 88px;
+  border: 8px outset #000000;
+  width: 30%; }
+
+.testimoniosHijo1 {
+  grid-area: testimonio1;
+  justify-self: right;
+  padding: 20px;
+  text-align: center; }
+  .testimoniosHijo1 p {
+    text-align: justify; }
+
+.img2 {
+  grid-area: logo2;
+  justify-self: center;
+  margin-top: 30px;
+  border-radius: 88px 88px 88px 88px;
+  -moz-border-radius: 88px 88px 88px 88px;
+  -webkit-border-radius: 88px 88px 88px 88px;
+  border: 8px outset #000000;
+  width: 30%; }
+
+.testimoniosHijo2 {
+  grid-area: testimonio2;
+  padding: 20px;
+  text-align: center; }
+  .testimoniosHijo2 p {
+    text-align: justify; }
+
+.img3 {
+  grid-area: logo3;
+  justify-self: center;
+  margin-top: 30px;
+  border-radius: 88px 88px 88px 88px;
+  -moz-border-radius: 88px 88px 88px 88px;
+  -webkit-border-radius: 88px 88px 88px 88px;
+  border: 8px outset #000000;
+  width: 30%; }
+
+.testimoniosHijo3 {
+  grid-area: testimonio3;
+  padding: 20px;
+  text-align: center; }
+  .testimoniosHijo3 p {
+    text-align: justify; }
+
+/* TESTIMONIOS media querie desktop*/
+@media only screen and (min-width: 1024px) {
+  .mainTestimonios {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: grid;
+    grid-template-areas: "titulo titulo titulo" "logo1 testimonio1 testimonio1"  "logo2 testimonio2 testimonio2"  "logo3 testimonio3 testimonio3";
+    column-gap: 100px;
+    padding-top: 2rem; }
+    .mainTestimonios h1 {
+      grid-area: titulo;
+      justify-self: center;
+      font-size: 4rem;
+      padding-bottom: 4rem; }
+    .mainTestimonios h4 {
+      text-align: center;
+      font-size: 3rem; }
+    .mainTestimonios p {
+      font-size: 1.5rem;
+      padding: 1rem 2rem 1rem 2rem; }
+    .mainTestimonios img {
+      width: 80%; }
+    .mainTestimonios .testimoniosHijo1, .mainTestimonios .testimoniosHijo2, .mainTestimonios .testimoniosHijo3 {
+      border: solid  1px #00b4d8;
+      margin: 1rem; }
+  .testimoniosHijo1 {
+    grid-area: testimonio1;
+    justify-self: right;
+    text-align: center; }
+  .testimoniosHijo2 {
+    grid-area: testimonio2;
+    justify-self: right;
+    text-align: center; }
+  .testimoniosHijo3 {
+    grid-area: testimonio3;
+    justify-self: right;
+    text-align: center; } }
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #ade8f4;
+  padding: 10px;
+  text-align: center; }
+  footer a {
+    text-align: center;
+    text-decoration: none;
+    color: black; }
+
+.botonInsta, .botonFb {
+  font-size: 1.5rem; }
+
+header {
+  justify-content: center;
+  text-align: center;
+  background-color: #ade8f4; }
+
+body {
+  background-color: #d5f3f9; }
+  body p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+
+img {
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: solid #00b4d8; }
+
+.linkConsulta, .linkNosotros, .linkSalas {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  border: solid #00b4d8;
+  background-color: #d5f3f9;
+  border-radius: 1rem;
+  padding: 10px;
+  text-transform: uppercase; }
+  .linkConsulta:hover, .linkNosotros:hover, .linkSalas:hover {
+    background-color: #4fa5b6;
+    transform: scale(10px);
+    color: #d5f3f9; }
+
+.botonInsta {
+  color: #1794ad; }
+
+.botonFb {
+  color: #1794ad; }

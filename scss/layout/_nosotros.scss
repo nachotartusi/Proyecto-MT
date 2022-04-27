@@ -1,0 +1,125 @@
+//media querie mobile
+
+.nosotrosGrid {
+    display: grid;
+    grid-template-areas: "nosotros "
+                         "video "
+                         "objetivo " ;
+    background-color: #d5f3f9;
+    justify-content: left;
+    .divNosotros2 {
+        display: flex;
+        flex-flow: column nowrap;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        padding-bottom: 150px;
+    }
+    .divHijoNosotros {
+        grid-area: nosotros;
+        padding: 30px 50px 6px 50px;
+        text-align: center;
+        .h2Nosotros {
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding-bottom: 50px;
+            padding-top: 40px;
+            font-size: 30px;
+            letter-spacing: 3px;
+        }
+        .parrafoQuiro2 {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color:darkslategray;
+            font-family: 'Roboto', sans-serif; 
+            letter-spacing: 2px;
+            text-align: justify;
+            font-style: italic;
+            padding: 1rem;
+            
+        }
+        
+    }
+    .divImgNosotros {
+        grid-area: video;
+        text-align: center;
+        .animate__animated{
+            width: 70%;
+            height: 70%;
+        }
+    }
+    .objetivos {
+        grid-area: objetivo;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .ulObjetivo {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            list-style: none;
+            text-align: center;
+        
+        }
+        h4 {
+            padding-bottom: 10px;
+            text-transform: none;
+            font-size: 2rem;
+            text-align: center;
+        }
+        li {
+            text-align:center;
+            padding: 25px;
+            text-align: justify;
+        }
+
+        .mision, .vision, .objetivo {
+            justify-self: center;
+            margin: 100px;
+            padding: 5px;
+            border-radius: 10px 10px 10px 10px;
+            -moz-border-radius: 10px 10px 10px 10px;
+            -webkit-border-radius: 10px 10px 10px 10px;
+            border: 2px solid #00b4d8;
+        
+        }
+    }
+}
+
+//media querie desktop
+
+@media only screen and (min-width:1024px) {
+
+    .nosotrosGrid {
+        display: grid;
+        grid-template-areas: "nosotros nosotros "
+                             "video video "
+                             "objetivo objetivo" ;
+        background-color: #d5f3f9;
+        justify-content: left;
+        .divHijoNosotros {
+            grid-area: nosotros;
+            h2 {
+                font-size: 3rem;
+                padding-top: 2rem;
+            }
+            .parrafoQuiro2 {
+                font-size: 1.3rem;
+                padding: 4rem 10rem 4rem 10rem;
+            }
+        }
+        .divImgNosotros {
+            grid-area: video;
+            width: 50%;
+            justify-self: center;
+        }
+        .objetivo {
+            grid-area: objetivo;
+            .mision, .vision, .objetivo {
+                justify-self: center;
+                padding: 5rem;
+            
+            }
+            
+        }
+        
+    }
+
+    
+
+}
