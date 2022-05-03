@@ -8,6 +8,7 @@
 @import "layout/index";
 @import "layout/nosotros";
 @import "layout/testimonios";
+@import "layout/salas";
 
 // variables 
 $color-body: #d5f3f9;
@@ -78,7 +79,6 @@ body{
     p {
         font-family: $font-parrafo;
     }
-    width: 100vw;
 }
 
 img {

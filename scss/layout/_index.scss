@@ -1,8 +1,12 @@
 
-
+body {
+   overflow-x: hidden;
+}
 .divIndex {
     background-color: #d5f3f9;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 15rem;
+    padding-top: 5rem;
     .titulo {
         text-align: center;
         padding-top: 50px;
@@ -21,11 +25,6 @@
     .parrafoConsulta {
         text-align: center;
         text-decoration: none;
-        :hover {
-            background-color: #4fa5b6;
-        transform: scale(10px);
-        color: #d5f3f9;
-        }
     }
 }
 
@@ -113,8 +112,32 @@
     
 
 }
-@media only screen and (min-width:1024px) {
-    .titulo {
-        font-size: 1px;
+@media only screen and (min-width: 1024px) {
+    .li1, .li2,.li3,.li4 {
+        justify-self: center;
+        padding: 30px 8px 6px 8px;
+        list-style: none;
+        font-size: 1.5rem;
+
     }
+    .ventajasTitulo {
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 5rem;
+        letter-spacing: 2px;
+        opacity: 0.7;
+    }
+    .divIndex .titulo {
+        font-size: 3rem;
+    }
+    .divHijo2 {
+        padding-top: 80px;
+        text-align: center;
+        img {
+            width: 10%;
+
+        }
+    }
+
+
 }
