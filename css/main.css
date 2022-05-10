@@ -2,6 +2,7 @@ nav {
   background-color: #ade8f4;
   font-size: 20px; }
 
+/*media querie mobile*/
 .contactoGrid {
   display: grid;
   grid-template-areas: "formulario" "ubicacion";
@@ -19,8 +20,10 @@ nav {
     text-align: center;
     padding-top: 2rem; }
   .contactoGrid iframe {
-    width: 80%; }
+    width: 80%;
+    border-radius: 2rem; }
 
+/*media querie desktop*/
 @media only screen and (min-width: 1024px) {
   .divContacto {
     display: grid;
@@ -74,8 +77,9 @@ body {
     justify-self: center; }
   .sectionNosotros .subtituloNosotros {
     text-align: center;
-    padding: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+    padding: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem; }
   .sectionNosotros .parrafoQuiro {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: darkslategray;
@@ -84,7 +88,7 @@ body {
     letter-spacing: 1px;
     text-align: justify;
     font-style: italic;
-    padding: 1rem; }
+    padding-top: 1px; }
   .sectionNosotros .leerMas {
     text-align: center;
     padding-top: 20px; }
@@ -92,8 +96,7 @@ body {
     padding-top: 80px;
     text-align: center; }
     .sectionNosotros .divHijo2 img {
-      width: 70%;
-      height: 70%; }
+      width: 70%; }
 
 #ventajas {
   background-color: #d5f3f9;
@@ -118,12 +121,14 @@ body {
     text-align: center; }
     .salasIndex .imagenSalas img {
       width: 80%;
-      height: 80%;
       border-radius: 200px 200px 200px 200px;
       -moz-border-radius: 200px 200px 200px 200px;
       -webkit-border-radius: 200px 200px 200px 200px;
       border: solid #00b4d8; }
+  .salasIndex .linkSalas {
+    font-size: 12px; }
 
+/*media querie desktop*/
 @media only screen and (min-width: 1024px) {
   .li1, .li2, .li3, .li4 {
     justify-self: center;
@@ -139,10 +144,11 @@ body {
   .divIndex .titulo {
     font-size: 3rem; }
   .divHijo2 {
-    padding-top: 80px;
-    text-align: center; }
-    .divHijo2 img {
-      width: 10%; } }
+    padding-top: 80px; }
+    .divHijo2 .imgNosotros {
+      width: 10%; }
+  #ventajas .ventajasTitulo {
+    font-size: 3rem; } }
 
 /* grid mobile*/
 .nosotrosGrid {

@@ -1,4 +1,5 @@
 // media querie mobile
+/*media querie mobile*/ 
 .contactoGrid {
     display: grid;
     grid-template-areas: "formulario"
@@ -20,11 +21,13 @@
     }
     iframe {
     width: 80%;
+    border-radius: 2rem;
     }
 
 }
 
 // media para desktop
+/*media querie desktop*/
 
 @media only screen and (min-width:1024px) {
 
@@ -47,6 +50,7 @@
     .ubicacion {
         grid-area: ubicacion;
         text-align: center;
+        
         }
 
 
