@@ -12,16 +12,22 @@ nav {
   flex-flow: column nowrap;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
   .contactoGrid .formulario1 {
-    padding: 3rem;
+    padding: 1rem;
     grid-area: formulario;
     text-align: left; }
   .contactoGrid .ubicacion {
     grid-area: ubicacion;
     text-align: center;
     padding-top: 2rem; }
+    .contactoGrid .ubicacion .h2ubicacion {
+      font-size: 2rem;
+      font-style: normal;
+      padding: 1rem;
+      background-color: #ade8f4; }
   .contactoGrid iframe {
+    padding-top: 2rem;
     width: 80%;
-    border-radius: 2rem; }
+    border-radius: 3rem; }
 
 /*media querie desktop*/
 @media only screen and (min-width: 1024px) {
@@ -38,7 +44,16 @@ nav {
     width: 50%; }
   .ubicacion {
     grid-area: ubicacion;
-    text-align: center; } }
+    text-align: center; }
+    .ubicacion .h2ubicacion {
+      font-size: 2rem;
+      font-style: normal;
+      padding: 1rem;
+      background-color: #d5f3f9; }
+  iframe {
+    padding-top: 1rem;
+    width: 80%;
+    border-radius: 3rem; } }
 
 body {
   overflow-x: hidden; }
@@ -151,6 +166,9 @@ body {
     font-size: 3rem; } }
 
 /* grid mobile*/
+body {
+  overflow-x: hidden; }
+
 .nosotrosGrid {
   display: grid;
   grid-template-areas: "nosotros " "video " "objetivo ";
@@ -166,12 +184,12 @@ body {
     grid-area: nosotros;
     padding: 5rem 2rem 1rem 2rem;
     text-align: center; }
-    .nosotrosGrid .divHijoNosotros .h2Nosotros {
+    .nosotrosGrid .divHijoNosotros .h2-nosotros {
       text-align: center;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       padding-bottom: 50px;
       padding-top: 40px;
-      font-size: 30px;
+      font-size: 1.8rem;
       letter-spacing: 3px; }
     .nosotrosGrid .divHijoNosotros .parrafoQuiro2 {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -186,8 +204,7 @@ body {
     grid-area: video;
     text-align: center; }
     .nosotrosGrid .divImgNosotros .animate__animated {
-      width: 70%;
-      height: 70%; }
+      width: 80%; }
   .nosotrosGrid .objetivos {
     grid-area: objetivo;
     padding-top: 20px;
@@ -203,15 +220,15 @@ body {
       text-align: center; }
     .nosotrosGrid .objetivos li {
       text-align: center;
-      padding: 25px;
+      padding: 10px;
       text-align: justify; }
     .nosotrosGrid .objetivos .mision, .nosotrosGrid .objetivos .vision, .nosotrosGrid .objetivos .objetivo {
       justify-self: center;
       margin: 100px;
       padding: 5px;
-      border-radius: 10px 10px 10px 10px;
-      -moz-border-radius: 10px 10px 10px 10px;
-      -webkit-border-radius: 10px 10px 10px 10px;
+      border-radius: 20px 20px 20px 20px;
+      -moz-border-radius: 20px 20px 20px 20px;
+      -webkit-border-radius: 20px 20px 20px 20px;
       border: 2px solid #00b4d8; }
 
 /*media querie desktop*/
@@ -341,6 +358,9 @@ h1 {
     justify-self: right;
     text-align: center; } }
 
+body {
+  overflow-x: hidden; }
+
 ul li {
   list-style: none;
   font-style: italic; }
@@ -348,6 +368,18 @@ ul li {
 ul p {
   text-align: justify;
   padding: 1rem; }
+
+.divSalas {
+  padding-top: 5rem; }
+  .divSalas h1 {
+    opacity: 10px;
+    background-color: #ade8f4;
+    margin: 0;
+    padding: 0; }
+  .divSalas ul {
+    padding-top: 4rem; }
+  .divSalas li {
+    font-style: initial; }
 
 footer {
   grid-area: footer;

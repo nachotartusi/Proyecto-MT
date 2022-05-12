@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+ }
+
 ul {
     li{
         list-style: none;
@@ -10,5 +14,21 @@ ul {
 
 }
 
+.divSalas {
+    padding-top: 5rem;
+    h1 {
+        opacity: 10px;
+        background-color: #ade8f4;
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        padding-top: 4rem;
+    }
 
+    li {
+    font-style: initial
+    ;
+    }
+}
 
