@@ -1,34 +1,123 @@
 body {
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
  }
+// mobile 
+
+.mainSalas {
+    display: grid;
+    grid-template-areas:  
+    "carrusel"
+    "salas"
+    ;
+}
+
+#sectionSalas {
+    grid-area: carrusel;
+    padding-top: 5rem;
+    margin-right: 1rem;
+}
+.salasQuiro {
+    grid-area: salas;
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+        padding-top: 4rem;
+    }
+    p {
+        color:darkslategray;
+        font-family: 'Roboto', sans-serif; 
+        font-size: 0.9rem;
+        padding: 2rem;
+        letter-spacing: 1px;
+        text-align: justify;
+        font-style: italic;
+        padding-top: 1px;
+    }
+}
 
 ul {
     li{
         list-style: none;
-        font-style: italic;
+        font-size: 1.5rem;
+        color: #057f97;
+        text-align: center;
+    }
+   
+}
+
+
+
+// media querie tablet
+
+@media only screen and (min-width:800px) {
+
+.mainSalas {
+    display: grid;
+    grid-template-areas: 
+    "carrusel"
+    "salas";
+    align-content: space-between;
+}
+
+#sectionSalas {
+    grid-area: carrusel;
+    align-self: center;
+   
+}
+.salasQuiro {
+    grid-area: salas;
+    h1 {
+        font-size:2rem;
     }
     p {
-        text-align: justify;
-        padding: 1rem;
+        font-size: 1.3rem;
+        padding: 3rem;
     }
-
-}
-
-.divSalas {
-    padding-top: 5rem;
-    h1 {
-        opacity: 10px;
-        background-color: #ade8f4;
-        margin: 0;
-        padding: 0;
-    }
-    ul {
-        padding-top: 4rem;
-    }
-
     li {
-    font-style: initial
-    ;
+        font-size: 2rem;
     }
 }
 
+
+
+
+
+}
+
+// media desktop 
+
+
+@media only screen and (min-width:1024px) {
+ 
+    .mainSalas {
+        display: grid;
+        grid-template-areas: 
+        "carrusel carrusel salas salas"
+        "carrusel carrusel salas salas";
+        justify-content: space-evenly;
+        height: 100vh;
+    }
+    #sectionSalas{
+        grid-area: carrusel;
+        padding-top: 1rem;
+        .carousel-inner {
+            width: 100%;
+           
+        }
+    }
+    .salasQuiro {
+        grid-area: salas;
+        h1 {
+            font-size: 2.5rem;
+            padding-bottom: 2rem;
+        }
+        p {
+            font-size: 1rem;
+            padding: 0 5rem 1rem 5rem;
+        }
+    }
+
+
+}

@@ -1,90 +1,167 @@
-//media querie mobile
-/* grid mobile*/
 
 body {
     overflow-x: hidden;
-    }
-
+}
+//media querie mobile
+/* grid mobile*/
 .nosotrosGrid {
     display: grid;
-    grid-template-areas: "nosotros "
-                         "video "
-                         "objetivo " ;
-    background-color: #d5f3f9;
-    justify-content: left;
-    .divNosotros2 {
-        display: flex;
-        flex-flow: column nowrap;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 20px;
-        padding-bottom: 150px;
-    }
-    .divHijoNosotros {
+    grid-template-areas: 
+    "nosotros"
+    "video"
+    "objetivo"
+    "vision"
+    "mision";
+    justify-content: center;
+
+    .divHijoNosotros{
         grid-area: nosotros;
-        padding: 5rem 2rem 1rem 2rem;
-        text-align: center;
+        margin: 2rem;
         .h2-nosotros {
             text-align: center;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             padding-bottom: 50px;
             padding-top: 40px;
-            font-size: 1.8rem;
+            font-size: 1.3rem;
             letter-spacing: 3px;
         }
         .parrafoQuiro2 {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             color:darkslategray;
             font-family: 'Roboto', sans-serif; 
-            letter-spacing: 2px;
+            font-size: 18px;
+            letter-spacing: 1px;
             text-align: justify;
             font-style: italic;
-            padding: 1rem;
-            
-        }
-        
+            padding-top: 1px;
+        }  
     }
     .divImgNosotros {
         padding-top: 3rem;
         grid-area: video;
         text-align: center;
         .animate__animated{
-            width: 80%;
+            width: 70%;
         }
     }
-    .objetivos {
+    .divImgNosotros2, .divImgNosotros3 {
+    visibility: hidden  ;
+    }
+    .objetivo {
         grid-area: objetivo;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        .ulObjetivo {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            list-style: none;
-            text-align: center;
-        
-        }
         h4 {
-            padding-bottom: 10px;
-            text-transform: none;
-            font-size: 2rem;
             text-align: center;
+            font-size: 1.6rem;
         }
         li {
-            text-align:center;
-            padding: 10px;
+            font-size: 1rem;
             text-align: justify;
-        }
-
-        .mision, .vision, .objetivo {
-            justify-self: center;
-            margin: 100px;
-            padding: 5px;
-            border-radius: 20px 20px 20px 20px;
-            -moz-border-radius: 20px 20px 20px 20px;
-            -webkit-border-radius: 20px 20px 20px 20px;
-            border: 2px solid #00b4d8;
-        
+            letter-spacing: 2px;
+            text-align: center;
+            padding:2rem;
+           
         }
     }
+    .vision {
+        grid-area: vision;
+        h4 {
+            text-align: center;
+            font-size: 1.6rem;
+        }
+        li {
+            font-size: 1rem;
+            text-align: justify;
+            letter-spacing: 2px;
+            text-align: center;
+            padding: 2rem;
+           
+        }
+    }
+    .mision {
+        grid-area: mision;
+        h4 {
+            text-align: center;
+            font-size: 1.6rem;
+        }
+        li {
+            font-size: 1rem;
+            text-align: justify;
+            letter-spacing: 2px;
+            text-align: center;
+            padding: 2rem;
+           
+        }
+    }
+
 }
+//media querie tablet
+/*media querie tablet*/
+
+@media only screen and (min-width:800px) {
+    .nosotrosGrid {
+        display: grid;
+        grid-template-areas: 
+        "nosotros"
+        "video"
+        "objetivo"
+        "vision"
+        "mision";
+        justify-content: center;
+    
+        .divHijoNosotros{
+            grid-area: nosotros;
+            margin: 2rem;
+            .h2-nosotros {
+                font-size: 2rem;
+            }
+            .parrafoQuiro2 {
+                font-size: 1.4rem;
+            }  
+        }
+        .divImgNosotros {
+            padding-top: 3rem;
+            grid-area: video;
+            text-align: center;
+            .animate__animated{
+                width: 70%;
+            }
+        }
+        .divImgNosotros2, .divImgNosotros3 {
+        visibility: hidden  ;
+        }
+        .objetivo {
+            grid-area: objetivo;
+            h4 {
+                font-size: 2rem;
+            }
+            li {
+                font-size: 1.4rem;
+            }
+        }
+        .vision {
+            grid-area: vision;
+            h4 {
+                text-align: center;
+                font-size: 2rem;
+            }
+            li {
+                font-size: 1.4rem;         
+            }
+        }
+        .mision {
+            grid-area: mision;
+            h4 {
+                text-align: center;
+                font-size: 2rem;
+            }
+            li {
+                font-size: 1.4rem;        
+            }
+        }
+    
+    }
+
+
+
+}    
 
 //media querie desktop
 /*media querie desktop*/
@@ -93,35 +170,50 @@ body {
 
     .nosotrosGrid {
         display: grid;
-        grid-template-areas: "nosotros nosotros "
-                             "video video "
-                             "objetivo objetivo" ;
-        background-color: #d5f3f9;
-        justify-content: left;
+        grid-template-areas: 
+        "nosotros nosotros nosotros "
+        "foto1 foto1 foto1"
+        "objetivo objetivo objetivo" ;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
         .divHijoNosotros {
             grid-area: nosotros;
-            h2 {
+            align-content: left;
+            .h2-nosotros{
                 font-size: 3rem;
                 padding-top: 2rem;
             }
             .parrafoQuiro2 {
                 font-size: 1.3rem;
                 padding: 4rem 10rem 4rem 10rem;
+                color:darkslategray;
+                font-size: 1.5rem;
+                letter-spacing: 1px;
+                text-align: justify;
             }
         }
         .divImgNosotros {
-            grid-area: video;
-            width: 50%;
-            justify-self: center;
+            grid-area: foto1;
+            .animate__animated {
+                width: 40%;
+            } 
         }
-        .objetivo {
+
+        .objetivos {
             grid-area: objetivo;
-            .mision, .vision, .objetivo {
-                justify-self: center;
-                padding: 5rem;
-            
+            text-align: center;
+        }
+        .objetivo, .mision ,.vision {
+            text-align: center;
+            h4 {
+                text-align: center;
+                font-size: 2rem;
             }
-            
+            li {
+                font-size: 1.3rem;
+                text-align: justify;
+                color:darkslategray;
+            }
         }
         
     }

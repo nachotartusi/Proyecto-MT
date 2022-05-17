@@ -1,16 +1,23 @@
+body {
+    overflow-x: hidden;
+}
 // media querie mobile
 /*media querie mobile*/ 
 .contactoGrid {
     display: grid;
-    grid-template-areas: "formulario"
-                         "ubicacion";
+    grid-template-areas:
+    "titulo"
+    "formulario"
+    "ubicacion";
     grid-row-gap: 80px;
     justify-content: center;
     display: flex;
     flex-flow: column nowrap;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    .titulo {
+        grid-area: titulo;
+    }
     .formulario1 {
-        padding: 1rem;
+        margin: 2rem;
         grid-area: formulario;
         text-align: left;
     }
@@ -18,11 +25,18 @@
     grid-area: ubicacion;
     text-align: center;
     padding-top: 2rem;
+    .direccion {
+        padding-top: 3rem;
+        p {
+            padding: 1rem;
+        }
+    }
     .h2ubicacion {
-        font-size: 2rem;
-        font-style: normal;
-        padding: 1rem;
-        background-color: #ade8f4;;
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 30px;
+        letter-spacing: 2px;
+        color: #057f97;
     }
     }
     iframe {
@@ -32,46 +46,96 @@
     }
 
 }
+//media querie tablet
+/* media querie tablet*/
 
+@media only screen and (min-width:800px) {
+    .contactoGrid {
+        display: grid;
+        grid-template-areas:
+        "titulo"
+        "formulario"
+         "ubicacion";
+        grid-row-gap: 80px;
+        justify-content: center;
+        display: flex;
+        flex-flow: column nowrap;
+        .formulario1 {
+            margin: 2.5rem;
+            grid-area: formulario;
+            text-align: left;
+        }
+        .ubicacion {
+        grid-area: ubicacion;
+        text-align: center;
+        padding-top: 2rem;
+        .direccion {
+            padding: 0;
+            h3 {
+                font-size: 1.4rem;
+            }
+            p {
+                padding: 0;
+            }
+
+        }
+        .h2ubicacion {
+            font-size: 2.3rem;
+            padding: 0 1rem 0 1rem;
+            background-color: #d5f3f9;
+        }
+        }
+        iframe {
+            padding-top: 2rem;
+            width: 60%;
+            border-radius: 3rem;
+        }
+    
+    }
+
+}
 // media para desktop
 /*media querie desktop*/
 
 @media only screen and (min-width:1024px) {
 
-    .divContacto {
+    .contactoGrid {
         display: grid;
         grid-template-areas: 
-        "formulario formulario ubicacion ubicacion";
-        justify-content: space-around;
-        display: flex;
-        flex-flow: row;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        "titulo titulo"
+        "formulario ubicacion";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        justify-content: center;
+
+    }
+    .titulo {
+        grid-area: titulo;
+        h1 {
+            font-size: 3.7rem;
+            letter-spacing: 5px;
+            margin: 0;
+            padding-bottom: 0;
+        }
+        
     }
     .formulario1 {
         grid-area: formulario;
-        text-align: left;
-
-        width: 50%;
-    
+        margin: 0;
+        padding-top: 5rem;
+        width: 70%;
     }
-
     .ubicacion {
         grid-area: ubicacion;
-        text-align: center;  
-        .h2ubicacion {
-            font-size: 2rem;
-            font-style: normal;
-            padding: 1rem;
-            background-color: #d5f3f9;
-        }
-
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
     }
-    iframe {
-        padding-top: 1rem;
-        width: 80%;
-        border-radius: 3rem;
+    .h2ubicacion {
+        font-size: 1px;
     }
 
+ 
 
 
 
