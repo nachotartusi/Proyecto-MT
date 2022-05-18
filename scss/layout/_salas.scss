@@ -4,19 +4,19 @@ body {
     padding: 0;
  }
 // mobile 
+/*mobile */
 
 .mainSalas {
     display: grid;
     grid-template-areas:  
     "carrusel"
-    "salas"
-    ;
+    "salas";
 }
 
 #sectionSalas {
     grid-area: carrusel;
     padding-top: 5rem;
-    margin-right: 1rem;
+    width: 80%;
 }
 .salasQuiro {
     grid-area: salas;
@@ -31,7 +31,7 @@ body {
         font-size: 0.9rem;
         padding: 2rem;
         letter-spacing: 1px;
-        text-align: justify;
+        text-align: center;
         font-style: italic;
         padding-top: 1px;
     }
@@ -68,15 +68,16 @@ ul {
 }
 .salasQuiro {
     grid-area: salas;
+    padding-bottom: 3rem;
     h1 {
         font-size:2rem;
     }
     p {
-        font-size: 1.3rem;
-        padding: 3rem;
+        font-size: 1rem;
+        padding: 0 3rem;
     }
     li {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -96,19 +97,15 @@ ul {
         grid-template-areas: 
         "carrusel carrusel salas salas"
         "carrusel carrusel salas salas";
-        justify-content: space-evenly;
-        height: 100vh;
     }
     #sectionSalas{
         grid-area: carrusel;
         padding-top: 1rem;
-        .carousel-inner {
-            width: 100%;
-           
-        }
+        width: 100%;
     }
     .salasQuiro {
         grid-area: salas;
+        padding: 3rem;
         h1 {
             font-size: 2.5rem;
             padding-bottom: 2rem;

@@ -2,6 +2,7 @@
 body {
     overflow-x: hidden;
 }
+
 //media querie mobile
 /* grid mobile*/
 .nosotrosGrid {
@@ -21,13 +22,11 @@ body {
             text-align: center;
             padding-bottom: 50px;
             padding-top: 40px;
-            font-size: 1.3rem;
+            font-size: 1.7rem;
             letter-spacing: 3px;
         }
         .parrafoQuiro2 {
-            color:darkslategray;
-            font-family: 'Roboto', sans-serif; 
-            font-size: 18px;
+            font-size: 15px;
             letter-spacing: 1px;
             text-align: justify;
             font-style: italic;
@@ -41,9 +40,6 @@ body {
         .animate__animated{
             width: 70%;
         }
-    }
-    .divImgNosotros2, .divImgNosotros3 {
-    visibility: hidden  ;
     }
     .objetivo {
         grid-area: objetivo;
@@ -113,7 +109,8 @@ body {
                 font-size: 2rem;
             }
             .parrafoQuiro2 {
-                font-size: 1.4rem;
+                font-size: 1.2rem;
+                padding: 1rem 5rem;
             }  
         }
         .divImgNosotros {
@@ -121,46 +118,39 @@ body {
             grid-area: video;
             text-align: center;
             .animate__animated{
-                width: 70%;
+                width: 40%;
             }
-        }
-        .divImgNosotros2, .divImgNosotros3 {
-        visibility: hidden  ;
         }
         .objetivo {
             grid-area: objetivo;
             h4 {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
             li {
-                font-size: 1.4rem;
+                font-size: 1rem;
             }
         }
         .vision {
             grid-area: vision;
             h4 {
                 text-align: center;
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
             li {
-                font-size: 1.4rem;         
+                font-size: 1rem;         
             }
         }
         .mision {
             grid-area: mision;
             h4 {
                 text-align: center;
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
             li {
-                font-size: 1.4rem;        
+                font-size: 1rem;        
             }
         }
-    
     }
-
-
-
 }    
 
 //media querie desktop
@@ -184,10 +174,9 @@ body {
                 padding-top: 2rem;
             }
             .parrafoQuiro2 {
-                font-size: 1.3rem;
-                padding: 4rem 10rem 4rem 10rem;
+                font-size: 1.4rem;
+                padding: 1rem 10rem 0.3rem 10rem;
                 color:darkslategray;
-                font-size: 1.5rem;
                 letter-spacing: 1px;
                 text-align: justify;
             }
@@ -195,13 +184,14 @@ body {
         .divImgNosotros {
             grid-area: foto1;
             .animate__animated {
-                width: 40%;
+                width: 30%;
             } 
         }
 
         .objetivos {
             grid-area: objetivo;
             text-align: center;
+            padding: 3rem 0;
         }
         .objetivo, .mision ,.vision {
             text-align: center;
@@ -210,7 +200,8 @@ body {
                 font-size: 2rem;
             }
             li {
-                font-size: 1.3rem;
+                font-size: 1rem;
+                padding: 1rem 9rem;
                 text-align: justify;
                 color:darkslategray;
             }

@@ -46,17 +46,10 @@ body {
         text-align: center;
         padding: 10px;
         font-size: 2rem;
-
     }
 
     .parrafoQuiro {
-        color:darkslategray;
-        font-family: 'Roboto', sans-serif; 
-        font-size: 18px;
-        letter-spacing: 1px;
-        text-align: justify;
-        font-style: italic;
-        padding-top: 1px;
+     font-family: 'Roboto', sans-serif; 
     }
     .leerMas {
         text-align: center;
@@ -67,7 +60,6 @@ body {
         text-align: center;
         img {
             width: 70%;
-
         }
     }
 }
@@ -109,8 +101,6 @@ body {
     .linkSalas {
         font-size: 12px;
     }
-    
-
 }
 // tablet
 
@@ -200,6 +190,9 @@ body {
             text-align: center;
             padding-top: 20px;
             font-size: 1.3rem;
+        }
+        .parrafoNosotros2 {
+            padding: 6rem;
         }
     }
     #ventajas .ventajasTitulo {

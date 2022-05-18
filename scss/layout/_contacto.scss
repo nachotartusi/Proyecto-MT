@@ -9,7 +9,6 @@ body {
     "titulo"
     "formulario"
     "ubicacion";
-    grid-row-gap: 80px;
     justify-content: center;
     display: flex;
     flex-flow: column nowrap;
@@ -17,7 +16,7 @@ body {
         grid-area: titulo;
     }
     .formulario1 {
-        margin: 2rem;
+        margin: 0 2rem ;
         grid-area: formulario;
         text-align: left;
     }
@@ -27,8 +26,12 @@ body {
     padding-top: 2rem;
     .direccion {
         padding-top: 3rem;
+        h3 {
+            font-size: 1rem;
+        }
         p {
-            padding: 1rem;
+            text-align: center;
+            font-size: 0.8rem;
         }
     }
     .h2ubicacion {
@@ -56,10 +59,13 @@ body {
         "titulo"
         "formulario"
          "ubicacion";
-        grid-row-gap: 80px;
         justify-content: center;
         display: flex;
         flex-flow: column nowrap;
+        .titulo {
+            grid-area: titulo;
+            letter-spacing: 3px;
+        }
         .formulario1 {
             margin: 2.5rem;
             grid-area: formulario;
@@ -114,16 +120,13 @@ body {
         h1 {
             font-size: 3.7rem;
             letter-spacing: 5px;
-            margin: 0;
-            padding-bottom: 0;
         }
         
     }
     .formulario1 {
         grid-area: formulario;
-        margin: 0;
         padding-top: 5rem;
-        width: 70%;
+        width: 90%;
     }
     .ubicacion {
         grid-area: ubicacion;
@@ -133,6 +136,13 @@ body {
     }
     .h2ubicacion {
         font-size: 1px;
+    }
+    .direccion {
+        padding-top: 1rem;
+        p {
+            text-align: center;
+            padding-right: 2rem;
+        }
     }
 
  

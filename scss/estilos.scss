@@ -8,10 +8,8 @@ body {
 //imports
 
 @import "utilities/variables";
-@import "layout/nav";
 @import "layout/contacto";
 @import "layout/footer";
-@import "base/base";
 @import "layout/index";
 @import "layout/nosotros";
 @import "layout/testimonios";
@@ -62,13 +60,22 @@ instagram: #1794ad,
     
     a { text-align: center;
         text-decoration: none;
-        color: black;
+       
+    }
+    p{
+        text-align: center;
     }
 
 }
 
 %boton-redes {
     font-size: 1.5rem;
+}
+
+%estilos-parrafos {
+    color:darkslategray;
+    letter-spacing: 1px;
+    text-align: justify;
 }
 
 
@@ -91,6 +98,9 @@ body{
 
 img {
     @include borde-imagen;
+}
+p,li {
+    @extend %estilos-parrafos;
 }
 
 

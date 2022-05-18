@@ -3,10 +3,6 @@ body {
   padding: 0;
   box-sizing: border-box; }
 
-nav {
-  background-color: #ade8f4;
-  font-size: 20px; }
-
 body {
   overflow-x: hidden; }
 
@@ -14,14 +10,13 @@ body {
 .contactoGrid {
   display: grid;
   grid-template-areas: "titulo" "formulario" "ubicacion";
-  grid-row-gap: 80px;
   justify-content: center;
   display: flex;
   flex-flow: column nowrap; }
   .contactoGrid .titulo {
     grid-area: titulo; }
   .contactoGrid .formulario1 {
-    margin: 2rem;
+    margin: 0 2rem;
     grid-area: formulario;
     text-align: left; }
   .contactoGrid .ubicacion {
@@ -30,8 +25,11 @@ body {
     padding-top: 2rem; }
     .contactoGrid .ubicacion .direccion {
       padding-top: 3rem; }
+      .contactoGrid .ubicacion .direccion h3 {
+        font-size: 1rem; }
       .contactoGrid .ubicacion .direccion p {
-        padding: 1rem; }
+        text-align: center;
+        font-size: 0.8rem; }
     .contactoGrid .ubicacion .h2ubicacion {
       text-align: center;
       padding-bottom: 10px;
@@ -48,10 +46,12 @@ body {
   .contactoGrid {
     display: grid;
     grid-template-areas: "titulo" "formulario" "ubicacion";
-    grid-row-gap: 80px;
     justify-content: center;
     display: flex;
     flex-flow: column nowrap; }
+    .contactoGrid .titulo {
+      grid-area: titulo;
+      letter-spacing: 3px; }
     .contactoGrid .formulario1 {
       margin: 2.5rem;
       grid-area: formulario;
@@ -87,21 +87,23 @@ body {
     grid-area: titulo; }
     .titulo h1 {
       font-size: 3.7rem;
-      letter-spacing: 5px;
-      margin: 0;
-      padding-bottom: 0; }
+      letter-spacing: 5px; }
   .formulario1 {
     grid-area: formulario;
-    margin: 0;
     padding-top: 5rem;
-    width: 70%; }
+    width: 90%; }
   .ubicacion {
     grid-area: ubicacion;
     display: flex;
     flex-flow: column wrap;
     align-items: center; }
   .h2ubicacion {
-    font-size: 1px; } }
+    font-size: 1px; }
+  .direccion {
+    padding-top: 1rem; }
+    .direccion p {
+      text-align: center;
+      padding-right: 2rem; } }
 
 body {
   overflow-x: hidden;
@@ -142,13 +144,7 @@ body {
     padding: 10px;
     font-size: 2rem; }
   .sectionNosotros .parrafoQuiro {
-    color: darkslategray;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    letter-spacing: 1px;
-    text-align: justify;
-    font-style: italic;
-    padding-top: 1px; }
+    font-family: 'Roboto', sans-serif; }
   .sectionNosotros .leerMas {
     text-align: center;
     padding-top: 20px; }
@@ -243,6 +239,8 @@ body {
     text-align: center;
     padding-top: 20px;
     font-size: 1.3rem; }
+  .sectionNosotros .parrafoNosotros2 {
+    padding: 6rem; }
   #ventajas .ventajasTitulo {
     font-size: 2.5rem; }
   .li1, .li2, .li3, .li4 {
@@ -270,12 +268,10 @@ body {
       text-align: center;
       padding-bottom: 50px;
       padding-top: 40px;
-      font-size: 1.3rem;
+      font-size: 1.7rem;
       letter-spacing: 3px; }
     .nosotrosGrid .divHijoNosotros .parrafoQuiro2 {
-      color: darkslategray;
-      font-family: 'Roboto', sans-serif;
-      font-size: 18px;
+      font-size: 15px;
       letter-spacing: 1px;
       text-align: justify;
       font-style: italic;
@@ -286,8 +282,6 @@ body {
     text-align: center; }
     .nosotrosGrid .divImgNosotros .animate__animated {
       width: 70%; }
-  .nosotrosGrid .divImgNosotros2, .nosotrosGrid .divImgNosotros3 {
-    visibility: hidden; }
   .nosotrosGrid .objetivo {
     grid-area: objetivo; }
     .nosotrosGrid .objetivo h4 {
@@ -334,35 +328,34 @@ body {
       .nosotrosGrid .divHijoNosotros .h2-nosotros {
         font-size: 2rem; }
       .nosotrosGrid .divHijoNosotros .parrafoQuiro2 {
-        font-size: 1.4rem; }
+        font-size: 1.2rem;
+        padding: 1rem 5rem; }
     .nosotrosGrid .divImgNosotros {
       padding-top: 3rem;
       grid-area: video;
       text-align: center; }
       .nosotrosGrid .divImgNosotros .animate__animated {
-        width: 70%; }
-    .nosotrosGrid .divImgNosotros2, .nosotrosGrid .divImgNosotros3 {
-      visibility: hidden; }
+        width: 40%; }
     .nosotrosGrid .objetivo {
       grid-area: objetivo; }
       .nosotrosGrid .objetivo h4 {
-        font-size: 2rem; }
+        font-size: 1.8rem; }
       .nosotrosGrid .objetivo li {
-        font-size: 1.4rem; }
+        font-size: 1rem; }
     .nosotrosGrid .vision {
       grid-area: vision; }
       .nosotrosGrid .vision h4 {
         text-align: center;
-        font-size: 2rem; }
+        font-size: 1.8rem; }
       .nosotrosGrid .vision li {
-        font-size: 1.4rem; }
+        font-size: 1rem; }
     .nosotrosGrid .mision {
       grid-area: mision; }
       .nosotrosGrid .mision h4 {
         text-align: center;
-        font-size: 2rem; }
+        font-size: 1.8rem; }
       .nosotrosGrid .mision li {
-        font-size: 1.4rem; } }
+        font-size: 1rem; } }
 
 /*media querie desktop*/
 @media only screen and (min-width: 1024px) {
@@ -378,32 +371,32 @@ body {
         font-size: 3rem;
         padding-top: 2rem; }
       .nosotrosGrid .divHijoNosotros .parrafoQuiro2 {
-        font-size: 1.3rem;
-        padding: 4rem 10rem 4rem 10rem;
+        font-size: 1.4rem;
+        padding: 1rem 10rem 0.3rem 10rem;
         color: darkslategray;
-        font-size: 1.5rem;
         letter-spacing: 1px;
         text-align: justify; }
     .nosotrosGrid .divImgNosotros {
       grid-area: foto1; }
       .nosotrosGrid .divImgNosotros .animate__animated {
-        width: 40%; }
+        width: 30%; }
     .nosotrosGrid .objetivos {
       grid-area: objetivo;
-      text-align: center; }
+      text-align: center;
+      padding: 3rem 0; }
     .nosotrosGrid .objetivo, .nosotrosGrid .mision, .nosotrosGrid .vision {
       text-align: center; }
       .nosotrosGrid .objetivo h4, .nosotrosGrid .mision h4, .nosotrosGrid .vision h4 {
         text-align: center;
         font-size: 2rem; }
       .nosotrosGrid .objetivo li, .nosotrosGrid .mision li, .nosotrosGrid .vision li {
-        font-size: 1.3rem;
+        font-size: 1rem;
+        padding: 1rem 9rem;
         text-align: justify;
         color: darkslategray; } }
 
 /* TESTIMONIOS media querie mobile */
 .mainTestimonios {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   display: grid;
   grid-template-areas: "titulo" "logo1" "testimonio1" "logo2" "testimonio2" "logo3" "testimonio3"; }
 
@@ -422,7 +415,7 @@ h1 {
   -moz-border-radius: 88px 88px 88px 88px;
   -webkit-border-radius: 88px 88px 88px 88px;
   border: 8px outset #000000;
-  width: 30%; }
+  width: 20%; }
 
 .testimoniosHijo1 {
   grid-area: testimonio1;
@@ -441,7 +434,7 @@ h1 {
   -moz-border-radius: 88px 88px 88px 88px;
   -webkit-border-radius: 88px 88px 88px 88px;
   border: 8px outset #000000;
-  width: 30%; }
+  width: 20%; }
 
 .testimoniosHijo2 {
   grid-area: testimonio2;
@@ -459,7 +452,7 @@ h1 {
   -moz-border-radius: 88px 88px 88px 88px;
   -webkit-border-radius: 88px 88px 88px 88px;
   border: 8px outset #000000;
-  width: 30%; }
+  width: 20%; }
 
 .testimoniosHijo3 {
   grid-area: testimonio3;
@@ -473,23 +466,24 @@ h1 {
 @media only screen and (min-width: 800px) {
   .mainTestimonios {
     display: grid;
-    grid-template-areas: "titulo titulo titulo" "logo1 testimonio1 testimonio1"  "logo2 testimonio2 testimonio2"  "logo3 testimonio3 testimonio3";
+    grid-template-areas: "titulo titulo titulo" "logo1 testimonio1 testimonio1"      "logo2 testimonio2 testimonio2"             "logo3 testimonio3 testimonio3";
     column-gap: 100px;
     padding-top: 2rem; }
     .mainTestimonios h1 {
       grid-area: titulo;
       justify-self: center;
       font-size: 4rem;
-      padding-bottom: 4rem; }
+      padding-bottom: 4rem;
+      letter-spacing: 3px; }
     .mainTestimonios h2 {
       text-align: center;
-      font-size: 2.5rem;
+      font-size: 2.4rem;
       background-color: #ade8f4; }
     .mainTestimonios p {
-      font-size: 1.5rem;
+      font-size: 1.1rem;
       padding: 1rem 2rem 1rem 2rem; }
     .mainTestimonios img {
-      width: 80%; }
+      width: 50%; }
     .mainTestimonios .testimoniosHijo1, .mainTestimonios .testimoniosHijo2, .mainTestimonios .testimoniosHijo3 {
       margin: 1rem; }
   .testimoniosHijo1 {
@@ -546,6 +540,7 @@ body {
   margin: 0;
   padding: 0; }
 
+/*mobile */
 .mainSalas {
   display: grid;
   grid-template-areas: "carrusel" "salas"; }
@@ -553,7 +548,7 @@ body {
 #sectionSalas {
   grid-area: carrusel;
   padding-top: 5rem;
-  margin-right: 1rem; }
+  width: 80%; }
 
 .salasQuiro {
   grid-area: salas; }
@@ -567,7 +562,7 @@ body {
     font-size: 0.9rem;
     padding: 2rem;
     letter-spacing: 1px;
-    text-align: justify;
+    text-align: center;
     font-style: italic;
     padding-top: 1px; }
 
@@ -586,28 +581,27 @@ ul li {
     grid-area: carrusel;
     align-self: center; }
   .salasQuiro {
-    grid-area: salas; }
+    grid-area: salas;
+    padding-bottom: 3rem; }
     .salasQuiro h1 {
       font-size: 2rem; }
     .salasQuiro p {
-      font-size: 1.3rem;
-      padding: 3rem; }
+      font-size: 1rem;
+      padding: 0 3rem; }
     .salasQuiro li {
-      font-size: 2rem; } }
+      font-size: 1.5rem; } }
 
 @media only screen and (min-width: 1024px) {
   .mainSalas {
     display: grid;
-    grid-template-areas: "carrusel carrusel salas salas" "carrusel carrusel salas salas";
-    justify-content: space-evenly;
-    height: 100vh; }
+    grid-template-areas: "carrusel carrusel salas salas" "carrusel carrusel salas salas"; }
   #sectionSalas {
     grid-area: carrusel;
-    padding-top: 1rem; }
-    #sectionSalas .carousel-inner {
-      width: 100%; }
+    padding-top: 1rem;
+    width: 100%; }
   .salasQuiro {
-    grid-area: salas; }
+    grid-area: salas;
+    padding: 3rem; }
     .salasQuiro h1 {
       font-size: 2.5rem;
       padding-bottom: 2rem; }
@@ -624,11 +618,17 @@ footer {
   text-align: center; }
   footer a {
     text-align: center;
-    text-decoration: none;
-    color: black; }
+    text-decoration: none; }
+  footer p {
+    text-align: center; }
 
 .botonInsta, .botonFb {
   font-size: 1.5rem; }
+
+p, li {
+  color: darkslategray;
+  letter-spacing: 1px;
+  text-align: justify; }
 
 header {
   justify-content: center;
