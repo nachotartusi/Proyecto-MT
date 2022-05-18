@@ -107,7 +107,8 @@ body {
 
 body {
   overflow-x: hidden;
-  width: 100vw; }
+  margin: 0;
+  padding: 0; }
 
 .divIndex {
   background-color: #d5f3f9;
@@ -163,13 +164,14 @@ body {
     letter-spacing: 2px;
     color: #057f97; }
   #ventajas .divVentajas {
-    text-align: center; }
+    text-align: center;
+    width: 10%; }
   #ventajas h4 {
     color: #057f97; }
   #ventajas .li1, #ventajas .li2, #ventajas .li3, #ventajas .li4 {
-    justify-self: center;
+    justify-content: center;
     padding: 2rem;
-    margin: 2rem;
+    margin: 2rem 3rem 2rem 2rem;
     list-style: none;
     border-radius: 38px 38px 38px 38px;
     -moz-border-radius: 38px 38px 38px 38px;
@@ -182,7 +184,8 @@ body {
   .salasIndex .imagenSalas {
     text-align: center; }
   .salasIndex .linkSalas {
-    font-size: 12px; }
+    font-size: 12px;
+    text-align: center; }
 
 /*media querie tablet*/
 @media only screen and (min-width: 800px) {
